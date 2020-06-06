@@ -84,10 +84,10 @@
 		9C9D8DB92482498500B6C6D3 /* what-to-wear-today-2 */ = {
 			isa = PBXGroup;
 			children = (
-				0AFDD1D1248B85CD00846157 /* CodyViewController.swift */,
 				9C9D8DBA2482498500B6C6D3 /* AppDelegate.swift */,
 				9C9D8DBC2482498500B6C6D3 /* SceneDelegate.swift */,
 				9C9D8DBE2482498500B6C6D3 /* ViewController.swift */,
+				0AFDD1D1248B85CD00846157 /* CodyViewController.swift */,
 				9C9D8DC02482498500B6C6D3 /* Main.storyboard */,
 				9C9D8DC52482498E00B6C6D3 /* LaunchScreen.storyboard */,
 				9C9D8DC32482498E00B6C6D3 /* Assets.xcassets */,

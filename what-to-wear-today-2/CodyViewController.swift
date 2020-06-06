@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CodyViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CodyViewController: UIViewController {
 
     let picker = UIImagePickerController()
     
@@ -40,8 +40,12 @@ class CodyViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         present(picker, animated: false, completion: nil)
     }
     func openCamera(){
-        picker.sourceType = .camera
-        present(picker, animated: false, completion: nil)
+        if(UIImagePickerController.isSourceTypeAvailable(.camera)){
+            picker.sourceType = .camera
+            present(picker, animated: false, completion: nil)
+        } else {
+            print("Camera is not available in simulator")
+        }
     }
     
     /*
@@ -53,5 +57,9 @@ class CodyViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension CodyViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 }
