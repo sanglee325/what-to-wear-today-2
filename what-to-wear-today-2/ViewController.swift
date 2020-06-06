@@ -13,10 +13,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func closetButtonClicked(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "ClosetViewController", sender: nil)
-    }
- 
-    
 }

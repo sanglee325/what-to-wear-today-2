@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xjd-l3-7Ql">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xjd-l3-7Ql">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,30 +16,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1U-sN-BsI">
-                                <rect key="frame" x="150" y="249" width="115" height="72"/>
+                                <rect key="frame" x="140" y="204" width="137" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Cody">
-                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez3-GF-6qh">
-                                <rect key="frame" x="73" y="551" width="111" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Closet"/>
                                 <connections>
-                                    <action selector="closetButtonClicked:" destination="KxQ-Y7-iXe" eventType="touchUpInside" id="xKo-QS-LZa"/>
-                                    <segue destination="TJE-PW-rVj" kind="push" identifier="ClosetViewController" id="4lU-y2-ro2"/>
+                                    <segue destination="MPf-FT-ckM" kind="push" identifier="button1" id="rpe-tb-PCa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOB-wa-xp9">
-                                <rect key="frame" x="244" y="551" width="90" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUc-zd-n8B">
+                                <rect key="frame" x="128" y="410" width="164" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Diary"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Closet">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="diaryButtonClicked:" destination="KxQ-Y7-iXe" eventType="touchUpInside" id="Dno-8x-UA8"/>
+                                    <segue destination="ZXy-OX-Ybw" kind="push" identifier="button2" id="pzl-Er-UXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-Pf-H1z">
+                                <rect key="frame" x="140" y="609" width="132" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Diary">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7ll-ZU-xCT" kind="push" identifier="button3" id="QTc-r8-aYJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,22 +57,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoG-Iw-bUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-644.92753623188412" y="56.919642857142854"/>
-        </scene>
-        <!--Closet View Controller-->
-        <scene sceneID="DHL-8Y-iVN">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d2X-hZ-H7k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController wantsFullScreenLayout="YES" id="TJE-PW-rVj" customClass="ClosetViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6AN-PE-ucV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="YmI-3P-aqo"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ovo-Ty-vrL"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="190" y="57"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7FM-Hi-Ncr">
@@ -85,6 +75,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdG-n4-IuS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1555.072463768116" y="56.919642857142854"/>
+        </scene>
+        <!--Cody View Controller-->
+        <scene sceneID="CCj-3B-4Tw">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="MPf-FT-ckM" userLabel="Cody View Controller" customClass="CodyViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7iD-R4-pR4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Page 1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-m6-Qsd">
+                                <rect key="frame" x="159" y="121" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sex-hh-uB4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PIp-GH-s7N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsm-Wp-y3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="-311"/>
+        </scene>
+        <!--Cody View Controller-->
+        <scene sceneID="WwQ-gR-eqL">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="ZXy-OX-Ybw" userLabel="Cody View Controller" customClass="CodyViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mcB-kA-FZN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Page 2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkS-ZJ-4oe">
+                                <rect key="frame" x="158" y="532" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="h31-LY-e7M"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fh0-Kk-ipR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XG-Tl-2b0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="57"/>
+        </scene>
+        <!--Cody View Controller-->
+        <scene sceneID="Waj-NS-CMg">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="7ll-ZU-xCT" userLabel="Cody View Controller" customClass="CodyViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Npr-w9-LKn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Page 3" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wya-oC-7ZT">
+                                <rect key="frame" x="81" y="491" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="l13-Fb-4yp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9jx-0L-YDm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2a-v8-66U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="456"/>
         </scene>
     </scenes>
 </document>

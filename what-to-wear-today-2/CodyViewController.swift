@@ -1,5 +1,5 @@
 //
-//  ClosetViewController.swift
+//  CodyViewController.swift
 //  what-to-wear-today-2
 //
 //  Created by 박 상리 on 2020/05/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClosetViewController: UIViewController {
+class CodyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
