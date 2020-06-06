@@ -13,6 +13,7 @@
 		9C9D8DC22482498500B6C6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D8DC02482498500B6C6D3 /* Main.storyboard */; };
 		9C9D8DC42482498E00B6C6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D8DC32482498E00B6C6D3 /* Assets.xcassets */; };
 		9C9D8DC72482498E00B6C6D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D8DC52482498E00B6C6D3 /* LaunchScreen.storyboard */; };
+		9C9D8DD32482560300B6C6D3 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D8DD22482560300B6C6D3 /* ClosetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9C9D8DC32482498E00B6C6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C9D8DC62482498E00B6C6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9D8DC82482498E00B6C6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9D8DD22482560300B6C6D3 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9C9D8DBC2482498500B6C6D3 /* SceneDelegate.swift */,
 				9C9D8DBE2482498500B6C6D3 /* ViewController.swift */,
 				9C9D8DC02482498500B6C6D3 /* Main.storyboard */,
+				9C9D8DD22482560300B6C6D3 /* ClosetViewController.swift */,
 				9C9D8DC32482498E00B6C6D3 /* Assets.xcassets */,
 				9C9D8DC52482498E00B6C6D3 /* LaunchScreen.storyboard */,
 				9C9D8DC82482498E00B6C6D3 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				9C9D8DBF2482498500B6C6D3 /* ViewController.swift in Sources */,
 				9C9D8DBB2482498500B6C6D3 /* AppDelegate.swift in Sources */,
+				9C9D8DD32482560300B6C6D3 /* ClosetViewController.swift in Sources */,
 				9C9D8DBD2482498500B6C6D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
