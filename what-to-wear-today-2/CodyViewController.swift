@@ -11,12 +11,16 @@ import UIKit
 class CodyViewController: UIViewController {
 
     let picker = UIImagePickerController()
+  
     
+    @IBOutlet weak var completeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        self.completeButton.isEnabled = false
     }
    
     
@@ -48,6 +52,7 @@ class CodyViewController: UIViewController {
         }
     }
     
+   
     /*
     // MARK: - Navigation
 
@@ -66,7 +71,7 @@ extension CodyViewController: UIImagePickerControllerDelegate, UINavigationContr
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
             imageView.image = image
             print(info)
-            
+            self.completeButton.isEnabled = true
         }
         dismiss(animated: true, completion: nil)
     }

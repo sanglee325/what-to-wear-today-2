@@ -85,9 +85,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-0C-xbZ">
-                                <rect key="frame" x="87" y="272" width="240" height="240"/>
+                                <rect key="frame" x="20" y="166" width="374" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-2o-hsW">
+                                <rect key="frame" x="190" y="715" width="35" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="완료"/>
+                                <connections>
+                                    <segue destination="aoX-vc-kaX" kind="push" id="A6R-KD-aen"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sex-hh-uB4"/>
@@ -100,12 +109,29 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="completeButton" destination="1hS-2o-hsW" id="R7k-Tg-yY2"/>
                         <outlet property="imageView" destination="YHe-0C-xbZ" id="GlP-bO-U5M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsm-Wp-y3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="263.768115942029" y="-311.38392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NFq-Ir-hIj">
+            <objects>
+                <viewController id="aoX-vc-kaX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3JF-4y-p3c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Xip-Bp-GLa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cyq-Sc-ZvL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgc-hL-o79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="-311"/>
         </scene>
         <!--Cody View Controller-->
         <scene sceneID="WwQ-gR-eqL">
