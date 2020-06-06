@@ -8,15 +8,42 @@
 
 import UIKit
 
-class CodyViewController: UIViewController {
+class CodyViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    let picker = UIImagePickerController()
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        picker.delegate = self
+    }
+   
+    
+    @IBAction func addAction(_ sender: Any) {
+        let alert = UIAlertController(title: "옷을 가져올거야",   message: "어디서 가져올래?", preferredStyle: .actionSheet)
+        let library = UIAlertAction(title: "앨범에서 가져오기", style: .default){
+            (action) in self.openLibrary()
+        }
+        let camera = UIAlertAction(title: "사진 찍기", style: .default){
+            (action) in self.openCamera()
+        }
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        alert.addAction(library)
+        alert.addAction(camera)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
     }
     
-
+    func openLibrary(){
+        picker.sourceType = .photoLibrary
+        present(picker, animated: false, completion: nil)
+    }
+    func openCamera(){
+        picker.sourceType = .camera
+        present(picker, animated: false, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
