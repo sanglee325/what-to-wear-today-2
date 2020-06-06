@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:what-to-wear-today-2/ClosetViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:DiaryViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:what-to-wear-today-2.xcodeproj">
    </FileRef>
    <FileRef

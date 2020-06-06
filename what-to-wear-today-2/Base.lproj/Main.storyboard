@@ -89,7 +89,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-2o-hsW">
-                                <rect key="frame" x="190" y="715" width="35" height="36"/>
+                                <rect key="frame" x="190" y="585" width="35" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="완료"/>
@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="1664" y="-311"/>
         </scene>
-        <!--Cody View Controller-->
+        <!--Closet View Controller-->
         <scene sceneID="WwQ-gR-eqL">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="ZXy-OX-Ybw" userLabel="Cody View Controller" customClass="CodyViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="ZXy-OX-Ybw" userLabel="Closet View Controller" customClass="ClosetViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mcB-kA-FZN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="906" y="57"/>
         </scene>
-        <!--Cody View Controller-->
+        <!--Diary View Controller-->
         <scene sceneID="Waj-NS-CMg">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="7ll-ZU-xCT" userLabel="Cody View Controller" customClass="CodyViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="7ll-ZU-xCT" userLabel="Diary View Controller" customClass="DiaryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Npr-w9-LKn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
