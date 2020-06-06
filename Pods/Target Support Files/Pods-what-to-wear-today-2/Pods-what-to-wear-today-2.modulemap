@@ -1,0 +1,6 @@
+framework module Pods_what_to_wear_today_2 {
+  umbrella header "Pods-what-to-wear-today-2-umbrella.h"
+
+  export *
+  module * { export * }
+}
