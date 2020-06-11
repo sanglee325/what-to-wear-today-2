@@ -11,6 +11,7 @@
 		0AFDD1D2248B85CE00846157 /* CodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDD1D1248B85CD00846157 /* CodyViewController.swift */; };
 		0AFDD1E32492102900846157 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDD1E22492102800846157 /* DiaryViewController.swift */; };
 		0AFDD1E52492102B00846157 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDD1E42492102B00846157 /* ClosetViewController.swift */; };
+		0AFDD1EF2492506600846157 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDD1EE2492506600846157 /* ImageViewController.swift */; };
 		9C9D8DBB2482498500B6C6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D8DBA2482498500B6C6D3 /* AppDelegate.swift */; };
 		9C9D8DBD2482498500B6C6D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D8DBC2482498500B6C6D3 /* SceneDelegate.swift */; };
 		9C9D8DBF2482498500B6C6D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9D8DBE2482498500B6C6D3 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		0AFDD1D1248B85CD00846157 /* CodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodyViewController.swift; sourceTree = "<group>"; };
 		0AFDD1E22492102800846157 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiaryViewController.swift; path = "/Users/kimsejin/Documents/what-to-wear-today-2/what-to-wear-today-2/DiaryViewController.swift"; sourceTree = "<absolute>"; };
 		0AFDD1E42492102B00846157 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClosetViewController.swift; path = "/Users/kimsejin/Documents/what-to-wear-today-2/what-to-wear-today-2/ClosetViewController.swift"; sourceTree = "<absolute>"; };
+		0AFDD1EE2492506600846157 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		30E7E61B2448FEA6F9B1949E /* Pods-what-to-wear-today-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-what-to-wear-today-2.release.xcconfig"; path = "Target Support Files/Pods-what-to-wear-today-2/Pods-what-to-wear-today-2.release.xcconfig"; sourceTree = "<group>"; };
 		43D39FAD006CD91D4BA3BA70 /* Pods_what_to_wear_today_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_what_to_wear_today_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9D8DB72482498500B6C6D3 /* what-to-wear-today-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "what-to-wear-today-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 				9C9D8DBC2482498500B6C6D3 /* SceneDelegate.swift */,
 				9C9D8DBE2482498500B6C6D3 /* ViewController.swift */,
 				0AFDD1D1248B85CD00846157 /* CodyViewController.swift */,
+				0AFDD1EE2492506600846157 /* ImageViewController.swift */,
 				0AFDD1E42492102B00846157 /* ClosetViewController.swift */,
 				0AFDD1E22492102800846157 /* DiaryViewController.swift */,
 				9C9D8DC02482498500B6C6D3 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 				9C9D8DBF2482498500B6C6D3 /* ViewController.swift in Sources */,
 				0AFDD1E32492102900846157 /* DiaryViewController.swift in Sources */,
 				0AFDD1E52492102B00846157 /* ClosetViewController.swift in Sources */,
+				0AFDD1EF2492506600846157 /* ImageViewController.swift in Sources */,
 				0AFDD1D2248B85CE00846157 /* CodyViewController.swift in Sources */,
 				9C9D8DBB2482498500B6C6D3 /* AppDelegate.swift in Sources */,
 				9C9D8DBD2482498500B6C6D3 /* SceneDelegate.swift in Sources */,

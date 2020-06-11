@@ -6,29 +6,20 @@
 //  Copyright © 2020 sanglee. All rights reserved.
 //
 
-// 이미지 전송?
 import UIKit
 
 class ImageViewController: UIViewController {
 
-//    @IBOutlet weak var myImage: UIImageView!
-//    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var displayTemperature: UITextView!
+    var final_temperature: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let str_temperature = NSString(format: "%.2f", final_temperature)
+        displayTemperature.text = str_temperature as String
         // Do any additional setup after loading the view.
     }
-/*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "show" {
-            let viewController : CodyViewController = segue.destination as! CodyViewController
-            //viewController.delegate = self
-            viewController.delegate2 = self
-        }
-        
-    }
- */
 
     /*
     // MARK: - Navigation
@@ -41,15 +32,3 @@ class ImageViewController: UIViewController {
     */
 
 }
-/*
-extension ImageViewController :  SendDataDelegate {
-    
-    func sendImage(data: UIImage) {
-        myImage.image = data
-    }
- 
-    func sendData(data: String) {
-        myLabel.text = data
-    }
-}
- */

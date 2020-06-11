@@ -9,7 +9,7 @@ import UIKit
 
 class DiaryViewController: UIViewController {
 
-    
+    var userTemperature : Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()

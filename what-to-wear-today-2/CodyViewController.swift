@@ -12,17 +12,28 @@ class CodyViewController: UIViewController {
 
     let picker = UIImagePickerController()
   
-    
+    @IBOutlet weak var temperature: UITextField!
     @IBOutlet weak var completeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
+    var temperature_val : Float = 10.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         self.completeButton.isEnabled = false
     }
-   
+    /*
+    @IBAction func move_next(_ sender: Any) { //segue를 이용한 데이터 전달 <- 스타일보드에서 무조건 segue작업해줘야함
+         performSegue(withIdentifier: "move_data", sender: self)
+         //여기서 "name"은 스토리보드에서 segue를 연결후 Identifier에 지정한 명칭이다.
+     }
+     */
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // segue를 이용한 데이터 전달
+         temperature_val = (temperature.text! as NSString).floatValue
+         let viewController = segue.destination as! ImageViewController
+         viewController.final_temperature = temperature_val //여기서 as는 자바에서 class에 상속(extent)과 같은 개념이다.
+     }
     
     @IBAction func addAction(_ sender: Any) {
         let alert = UIAlertController(title: "옷을 가져올거야",   message: "어디서 가져올래?", preferredStyle: .actionSheet)
