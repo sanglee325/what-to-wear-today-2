@@ -11,10 +11,14 @@ import UIKit
 class ImageViewController: UIViewController {
 
     @IBOutlet weak var displayTemperature: UITextView!
+    @IBOutlet weak var Best1: UIImageView!
+    
     var final_temperature: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let image = UIImage(named: "2_1.jpeg")
+        Best1.image = image
         
         let str_temperature = NSString(format: "%.1f", final_temperature)
         displayTemperature.text = "입력하신 기온은 " + (str_temperature as String) + "도 입니다."
