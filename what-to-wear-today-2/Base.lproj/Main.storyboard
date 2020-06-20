@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--내일 뭐 입지?-->
+        <!--오늘 뭐 입지?-->
         <scene sceneID="ulK-om-x0P">
             <objects>
-                <viewController id="KxQ-Y7-iXe" customClass="ViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KxQ-Y7-iXe" customClass="ViewController" customModule="오늘_뭐_입지_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fLV-8N-T41">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="blA-SV-ioh"/>
                     </view>
-                    <navigationItem key="navigationItem" title="내일 뭐 입지?" id="GCh-M3-VDG"/>
+                    <navigationItem key="navigationItem" title="오늘 뭐 입지?" id="GCh-M3-VDG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoG-Iw-bUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +82,7 @@
         <!--Cody View Controller-->
         <scene sceneID="CCj-3B-4Tw">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="MPf-FT-ckM" userLabel="Cody View Controller" customClass="CodyViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="MPf-FT-ckM" userLabel="Cody View Controller" customClass="CodyViewController" customModule="오늘_뭐_입지_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7iD-R4-pR4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,7 @@
         <!--Image View Controller-->
         <scene sceneID="NFq-Ir-hIj">
             <objects>
-                <viewController id="aoX-vc-kaX" customClass="ImageViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aoX-vc-kaX" customClass="ImageViewController" customModule="오늘_뭐_입지_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3JF-4y-p3c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,8 +147,23 @@
                                 <rect key="frame" x="54" y="230" width="307" height="307"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="추천 코디 Best 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-IP-2co">
+                                <rect key="frame" x="142" y="198" width="131" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="입력하신 기온은 0도 입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="334-3u-U1D">
+                                <rect key="frame" x="114" y="623" width="202" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw9-tM-9SQ">
-                                <rect key="frame" x="114" y="734" width="186" height="83"/>
+                                <rect key="frame" x="114" y="728" width="186" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="코디 더보기" backgroundImage="button">
@@ -158,21 +173,6 @@
                                     <segue destination="VSa-5e-X11" kind="show" id="kKL-sn-z7H"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="추천 코디 Best 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-IP-2co">
-                                <rect key="frame" x="142" y="198" width="131" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="입력하신 기온은 0도 입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="334-3u-U1D">
-                                <rect key="frame" x="106" y="629" width="202" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Xip-Bp-GLa"/>
@@ -196,7 +196,7 @@
         <!--Recommend View Controller-->
         <scene sceneID="jaZ-bo-8By">
             <objects>
-                <viewController id="VSa-5e-X11" customClass="RecommendViewController" customModule="what_to_wear_today_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VSa-5e-X11" customClass="RecommendViewController" customModule="오늘_뭐_입지_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLm-X8-LhG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjR-5q-Zp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2556.521739130435" y="-311.38392857142856"/>
+            <point key="canvasLocation" x="2481" y="-311"/>
         </scene>
         <!--Closet View Controller-->
         <scene sceneID="WwQ-gR-eqL">
@@ -269,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XG-Tl-2b0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="57"/>
+            <point key="canvasLocation" x="970" y="57"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="q29-A3-FXN">
