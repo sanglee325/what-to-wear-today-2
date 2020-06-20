@@ -1,30 +1,25 @@
 //
-//  ImageViewController.swift
+//  RecommendViewController.swift
 //  what-to-wear-today-2
 //
-//  Created by 김세진 on 2020/06/11.
+//  Created by 김세진 on 2020/06/20.
 //  Copyright © 2020 sanglee. All rights reserved.
 //
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class RecommendViewController: UIViewController {
 
-    @IBOutlet weak var displayTemperature: UITextView!
-    var final_temperature: Float = 0.0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let str_temperature = NSString(format: "%.1f", final_temperature)
-        displayTemperature.text = "입력하신 기온은 " + (str_temperature as String) + "도 입니다."
+
         // Do any additional setup after loading the view.
     }
-
     
     @IBAction func gotoHome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
+    
     /*
     // MARK: - Navigation
 

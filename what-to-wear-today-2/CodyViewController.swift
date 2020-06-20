@@ -15,6 +15,7 @@ class CodyViewController: UIViewController {
     @IBOutlet weak var temperature: UITextField!
     @IBOutlet weak var completeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var informText: UILabel!
     
     var temperature_val : Float = 10.0
     
@@ -63,7 +64,6 @@ class CodyViewController: UIViewController {
         }
     }
     
-   
     /*
     // MARK: - Navigation
 
@@ -83,6 +83,7 @@ extension CodyViewController: UIImagePickerControllerDelegate, UINavigationContr
             imageView.image = image
             print(info)
             self.completeButton.isEnabled = true
+            self.informText.isHidden = true
         }
         dismiss(animated: true, completion: nil)
     }
